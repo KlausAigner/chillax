@@ -17,7 +17,6 @@ jobs:
           cache: 'maven'
           cache-dependency-path: 'backend/pom.xml' # optional
       - run: |
-          java -version
           java HalloWelt.java
           
       - run: echo "🍏 This job's status is ${{ job.status }}."
