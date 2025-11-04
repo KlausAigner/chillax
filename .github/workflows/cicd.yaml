@@ -17,7 +17,7 @@ jobs:
           chmod +x render.sh
           ./render.sh
         working-directory: documentation
-        uses: xresloader/upload-to-github-release@main
+      - uses: xresloader/upload-to-github-release@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
