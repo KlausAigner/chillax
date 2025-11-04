@@ -10,13 +10,6 @@ jobs:
         run: |
           pwd
           ls ${{ github.workspace }}
-      - uses: actions/setup-java@v5
-        with:
-          distribution: 'temurin'
-          java-version: '25'
-          cache: 'maven'
-          cache-dependency-path: 'backend/pom.xml' # optional
-      - name: Build with Maven
       - run: |
           java HalloWelt.java
           
