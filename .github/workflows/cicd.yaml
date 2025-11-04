@@ -9,9 +9,9 @@ jobs:
       - name: List files in the repository
         run: |
           pwd
-          pwd
-      -run: |
-        java -version
-        java HalloWelt.java
           ls ${{ github.workspace }}
+      - run: |
+          java -version
+          java HalloWelt.java
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."
