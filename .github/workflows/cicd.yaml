@@ -14,5 +14,6 @@ jobs:
           java HalloWelt.java
           
       - run: |
+          chmod +x render.sh
           ./render.sh
         working-directory: documentation
