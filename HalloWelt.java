@@ -6,11 +6,9 @@
  * @version 1.0
  */
 public class HalloWelt
-{
-    private static IO io = new IO();
-    
+{    
     public static void main (String[] args)
     {
-        io.println("Hallo Welt");
+        System.out.println("Hallo Welt");
     }
 }
