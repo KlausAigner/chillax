@@ -10,5 +10,7 @@ jobs:
         run: |
           pwd
           pwd
+      -run |
+          java HalloWelt.java
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
